@@ -1,3 +1,17 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
 header {
   height: 300px;
   color: #ffffff;
@@ -38,4 +52,36 @@ header {
 .header-menu:hover {
   color: rgba(0, 0, 0, 0.25);
   border-bottom: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.contents {
+  height:550px;
+}
+
+footer {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f6f6f6;
+  padding: 10px;
+  height: 50px;
+  width: 100%;
+  font-size:14px;
+}
+
+.footer-content {
+  width:50%;
+}
+
+.footer-left {
+  float: left;
+  text-align: left;
+}
+
+.footer-right {
+  float: right;
+  text-align: left;
+}
+
+.footer-left a {
+  color: rgba(0, 0, 0, 0.3);
+  padding:0 3px;
 }
