@@ -1,3 +1,4 @@
+/* standard */
 a {
   text-decoration: none;
   cursor: pointer;
@@ -8,9 +9,22 @@ a {
   height: 100%;
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 20px;
   box-sizing: border-box;
 }
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* header */
 
 header {
   height: 300px;
@@ -54,9 +68,77 @@ header {
   border-bottom: 3px solid rgba(0, 0, 0, 0.15);
 }
 
+/* contents */
+
 .contents {
   height:550px;
 }
+
+/* contact */
+
+.contact-title {
+  padding-bottom: 30px;
+  font-family: Karla, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.25);
+  letter-spacing: 1.4px;
+}
+
+.contact-top {
+  display: flex;
+}
+
+.contact-bottom {
+  padding-top:30px;
+}
+
+.column {
+  margin-top: 50px;
+  width: 70%;
+}
+
+.column ul li {
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+.column-right{
+  width:68%;
+  font-size: 18px;
+}
+
+.column-left{
+  width:32%;
+  color: #A479BB;
+}
+
+.column-left ul li {
+  cursor: pointer;
+}
+
+
+.column-right ul li {
+  font-family: Vollkorn, Georgia, serif;
+  color: #4f4f4f;
+}
+
+.twitter-account {
+  color: #A479BB;
+}
+
+.fa-envelope {
+  color: rgba(0, 0, 0, 0.25);
+}
+.fa-twitter {
+  color:#00aced;
+}
+.fa-facebook-messenger {
+  color: #0084ff;
+}
+
+/* footer */
 
 footer {
   color: rgba(0, 0, 0, 0.3);
@@ -71,17 +153,7 @@ footer {
   width:50%;
 }
 
-.footer-left {
-  float: left;
-  text-align: left;
-}
-
-.footer-right {
-  float: right;
-  text-align: left;
-}
-
-.footer-left a {
+.footer-content a {
   color: rgba(0, 0, 0, 0.3);
   padding:0 3px;
 }
