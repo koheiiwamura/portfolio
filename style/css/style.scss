@@ -64,6 +64,18 @@ header {
   position: relative;
   background: linear-gradient(to right, #28BBEB, #FF637E, #FFE226, #28BBEB);
   background-size: 300% 100%;
+  background-position: 0% 0%;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+
+  &.profile {
+    background-position: 0% 0%; }
+  &.work {
+    background-position: 33.3% 0%; }
+  &.contact {
+    background-position: 66.6% 0%; }
 
   .header-title {
     position: absolute;
@@ -92,6 +104,9 @@ header {
         color: $lightgray;
         border-bottom: 3px solid rgba(0, 0, 0, 0.15);
       }
+    }
+    a {
+      color: #fff;
     }
   }
 }

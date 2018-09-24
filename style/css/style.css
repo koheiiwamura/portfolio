@@ -46,7 +46,18 @@ header {
   color: #ffffff;
   position: relative;
   background: linear-gradient(to right, #28BBEB, #FF637E, #FFE226, #28BBEB);
-  background-size: 300% 100%; }
+  background-size: 300% 100%;
+  background-position: 0% 0%;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  header.profile {
+    background-position: 0% 0%; }
+  header.work {
+    background-position: 33.3% 0%; }
+  header.contact {
+    background-position: 66.6% 0%; }
   header .header-title {
     position: absolute;
     top: 50%;
@@ -70,6 +81,8 @@ header {
       header .header-menus .header-menu:hover {
         color: rgba(0, 0, 0, 0.26);
         border-bottom: 3px solid rgba(0, 0, 0, 0.15); }
+    header .header-menus a {
+      color: #fff; }
 
 /* profile */
 .avatar {
