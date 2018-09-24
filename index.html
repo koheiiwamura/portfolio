@@ -6,6 +6,8 @@
     <link rel='stylesheet' type='text/css' href='http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css'>
     <link rel='stylesheet' href='style/css/style.css'>
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU' crossorigin='anonymous'>
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='style/js/style.js'></script>
   </head>
   <body>
     <header>
@@ -14,16 +16,16 @@
         This is my portfolio.
       </h1>
       <ul class='header-menus'>
-        <li class='header-menu' href='#'><a>Profile</a></li>
-        <li class='header-menu' href='#'><a>Work</a></li>
-        <li class='header-menu' href='#'><a>Contact</a></li>
+        <a href='/profile/'><li id='profile-link' class='header-menu'>Profile</li></a>
+        <a href='/work/'><li id='work-link' class='header-menu'>Work</li></a>
+        <a href='/contact/'><li id='contact-link' class='header-menu'>Contact</li></a>
       </ul>
     </header>
 
-    <div class=contents>
-      <div class='container'>
+    <div class='contents slider'>
+      <div class='container slide-set'>
 
-        <div id='profile-contents' class='contents-wrapper'>
+        <div id='profile-contents' class='contents-wrapper slide'>
           <div class='profile-top flex'>
             <div class='profile-left'>
               <div class='avatar flex'>
@@ -53,7 +55,7 @@
           </div>
         </div>
 
-        <div id='work-contents' class='contents-wrapper'>
+        <div id='work-contents' class='contents-wrapper slide'>
           <div class='work-top'>
             <div class='work-items'>
 
@@ -107,7 +109,7 @@
           </div>
         </div>
 
-        <div id='contact-contents' class='contents-wrapper'>
+        <div id='contact-contents' class='contents-wrapper slide'>
           <div class='contact-top flex'>
             <div class='contact-row row-left'>
               <div class='contact-row-title gray-title'>contact</div>
