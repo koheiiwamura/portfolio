@@ -1,9 +1,22 @@
 $(function(){
   var pageNum = 1
   var pageNumDict = {
-    'profile-contents': 1,
-    'work-contents': 2,
-    'contact-contents': 3
+    'profile-contents': 0,
+    'work-contents': 1,
+    'contact-contents': 2
+  }
+
+  var slideCurrent = 0;
+  var slideWidth = $('.slide').outerWidth();
+  var slideNum = $('.slide').length;
+  var slideSetWidth = slideWidth * slideNum;
+
+  $('.slide-set').css('width', slideSetWidth);
+
+  var sliding = function(){
+    $('.slide-set').animate({
+      left: slideCurrent * -slideWidth
+    });
   }
 
   $('a').each(function(){
@@ -14,6 +27,11 @@ $(function(){
 
       $('header').removeAttr('class');
       $('header').addClass(id);
+
+      slideCurrent = pageNumDict[page]
+      sliding()
+
     })
   })
+
 })
