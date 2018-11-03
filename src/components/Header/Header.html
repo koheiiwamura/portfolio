@@ -1,11 +1,9 @@
-<header>
+<header :class="selectedMenu">
   <h1 class='header-title'>
     Hey, I'm Kohei Iwamura.<br>
     This is my portfolio.
   </h1>
   <ul class='header-menus'>
-    <router-link tag="li" to="#profile" id='profile-link' class='header-menu profile' exact>Profile</router-link>
-    <router-link tag="li" to="#work" id='work-link' class='header-menu work' exact>Work</router-link>
-    <router-link tag="li" to="#contact" id='contact-link' class='header-menu contact' exact>Contact</router-link>
+    <li v-for="menu in menus" class="header-menu" v-on:click="triggerChangeContent(menu)">{{menu}}</li>
   </ul>
 </header>
