@@ -3,6 +3,14 @@ import Footer from "../Footer/index.vue"
 import eventBus from '../../helper/eventBus'
 
 
+const slideSetWidth = window.innerWidth * 3
+const slideWidth = window.innerWidth
+const slideNum = 3
+const pageNumDict = {
+        'profile': 0,
+        'work': 1,
+        'contact': 2
+      }
 
 export default {
     name: 'top',
@@ -12,36 +20,15 @@ export default {
     },
     data: function () {
       return {
+        scrollWidth: slideSetWidth,
       }
     },
     methods: {
       changeContent: function (requreContent) {
-
-      var pageNum = 1
-      var pageNumDict = {
-        'profile': 0,
-        'work': 1,
-        'contact': 2
-      }
-
-      var slideCurrent = 0;
-      var slideWidth = $('.slide').outerWidth();
-      var slideNum = $('.slide').length;
-      var slideSetWidth = slideWidth * slideNum;
-
-      $('.slide-set').css('width', slideSetWidth);
-
-      var sliding = function(){
-        $('.slide-set').animate({
-          left: slideCurrent * -slideWidth
-        });
-      }
-
-      slideCurrent = pageNumDict[requreContent]
-      sliding()
-
-
-
+      var slideCurrent = pageNumDict[requreContent];
+      $(this.$refs.slideSet).animate({
+        left: slideCurrent * -slideWidth
+      });
       }
     }
 
