@@ -1,0 +1,73 @@
+/* standard */
+
+$mainPurple: #A479BB;
+$grayTextFont: Karla, Helvetica, sans-serif;
+$sentenceFont: Vollkorn, Georgia, serif;
+$lightgray: rgba(0, 0, 0, 0.26);
+$mainblack: #4f4f4f;
+
+/* header */
+
+header {
+  height: 300px;
+  color: #ffffff;
+  position: relative;
+  background: linear-gradient(to right, #28BBEB, #FF637E, #FFE226, #28BBEB);
+  background-size: 300% 100%;
+  background-position: 0% 0%;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+
+  &.profile {
+    background-position: 0% 0%; }
+  &.work {
+    background-position: 33.3% 0%; }
+  &.contact {
+    background-position: 66.6% 0%; }
+
+  .header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 30px;
+  }
+  .header-menus {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+    .header-menu {
+      padding: 10px 0px;
+      margin: 0 25px;
+      display: inline-block;
+      font-size: 15px;
+      transition: 0.3s;
+      text-transform: capitalize;
+      text-align: center;
+      border-bottom: 3px solid transparent;
+
+      &:hover {
+        color: $lightgray;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.15);
+      }
+    }
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.fa-envelope {
+  color: $lightgray;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-facebook-messenger {
+  color: #0084ff;
+}

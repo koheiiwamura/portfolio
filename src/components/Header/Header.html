@@ -1,0 +1,9 @@
+<header :class="selectedMenu">
+  <h1 class='header-title'>
+    Hey, I'm Kohei Iwamura.<br>
+    This is my portfolio.
+  </h1>
+  <ul class='header-menus'>
+    <li v-for="menu in menus" class="header-menu" v-on:click="triggerChangeContent(menu)">{{menu}}</li>
+  </ul>
+</header>

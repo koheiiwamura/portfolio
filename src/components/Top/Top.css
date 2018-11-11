@@ -3,24 +3,6 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
-.contents {
-  min-height: 550px; }
-  .contents.slider {
-    display: block; }
-  .contents .slide-set {
-    width: 300%;
-    display: flex;
-    position: absolute; }
-    .contents .slide-set .slide {
-      overflow: hidden;
-      position: relative; }
-  .contents .container {
-    margin: 0 auto;
-    box-sizing: border-box; }
-    .contents .container .contents-wrapper {
-      padding: 50px 7%;
-      width: 100%; }
-
 .flex {
   display: flex; }
 
@@ -43,49 +25,24 @@ a {
   font-family: Vollkorn, Georgia, serif;
   color: #4f4f4f; }
 
-/* header */
-header {
-  height: 300px;
-  color: #ffffff;
-  position: relative;
-  background: linear-gradient(to right, #28BBEB, #FF637E, #FFE226, #28BBEB);
-  background-size: 300% 100%;
-  background-position: 0% 0%;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
-  header.profile {
-    background-position: 0% 0%; }
-  header.work {
-    background-position: 33.3% 0%; }
-  header.contact {
-    background-position: 66.6% 0%; }
-  header .header-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translateY(-50%) translateX(-50%);
-    font-size: 30px; }
-  header .header-menus {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center; }
-    header .header-menus .header-menu {
-      padding: 10px 0px;
-      margin: 0 25px;
-      display: inline-block;
-      font-size: 15px;
-      transition: 0.3s;
-      text-align: center;
-      border-bottom: 3px solid transparent; }
-      header .header-menus .header-menu:hover {
-        color: rgba(0, 0, 0, 0.26);
-        border-bottom: 3px solid rgba(0, 0, 0, 0.15); }
-    header .header-menus a {
-      color: #fff; }
+/* contents */
+.contents {
+  min-height: 550px; }
+  .contents.slider {
+    display: block; }
+  .contents .slide-set {
+    width: 300%;
+    display: flex;
+    position: absolute; }
+    .contents .slide-set .slide {
+      overflow: hidden;
+      position: relative; }
+  .contents .container {
+    margin: 0 auto;
+    box-sizing: border-box; }
+    .contents .container .contents-wrapper {
+      padding: 50px 7%;
+      width: 100%; }
 
 /* profile */
 .avatar {
@@ -176,27 +133,6 @@ header {
   .contact-top .row-right {
     width: 68%; }
 
-/* footer */
-footer {
-  color: rgba(0, 0, 0, 0.26);
-  font-family: Vollkorn, Georgia, serif;
-  line-height: 20px;
-  background-color: #f6f6f6;
-  padding: 10px;
-  width: 100%;
-  font-size: 14px; }
-  footer .container {
-    width: 100%;
-    height: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    box-sizing: border-box; }
-  footer .footer-content {
-    width: 50%; }
-    footer .footer-content a {
-      color: rgba(0, 0, 0, 0.26);
-      padding: 0 3px; }
-
 .fa-envelope {
   color: rgba(0, 0, 0, 0.26); }
 
@@ -206,4 +142,4 @@ footer {
 .fa-facebook-messenger {
   color: #0084ff; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=Top.css.map */
