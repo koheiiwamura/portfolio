@@ -10,9 +10,4 @@ export default {
 }
 </script>
 
-<style>
-body {
-  margin: 0;
-  padding: 0;
-}
-</style>
+<style src="./assets/css/reset.css" />
