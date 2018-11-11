@@ -8,7 +8,7 @@
         <div class='profile-top flex'>
           <div class='profile-left'>
             <div class='avatar flex'>
-              <img src='assets/images/sample.jpeg' alt='avatar'>
+              <img :src="image_src" alt='avatar'>
             </div>
           </div>
           <div class='profile-right'>
@@ -40,14 +40,14 @@
 
             <div class='work-item'>
               <div class='work-item-header'>
-                <img src='assets/images/sample.jpeg' alt='' height='200px' width='100%' />
+                <img :src="image_src" alt='' height='200px' width='100%' >
               </div>
               <div class='work-item-bottom'>Internship</div>
               <div class='work-period'>2016-11 ~ 2017-3</div>
             </div>
             <div class='work-item'>
               <div class='work-item-header'>
-                <img src='assets/images/sample.jpeg' alt='' height='200px' width='100%' />
+                <img :src="image_src" alt='' height='200px' width='100%' >
               </div>
               <div class='work-item-bottom'>Software Enginner</div>
               <div class='work-period'>2017-4 ~</div>
@@ -109,8 +109,8 @@
           </div>
         </div>
         <div class='contact-bottom'>
-          <img src='assets/images/sample.jpeg' alt='' width='370px' height='280px' />
-          <img src='assets/images/sample.jpeg' alt='' width='280px' height='280px' style='margin-left:20px;' />
+          <img :src="image_src" alt='' width='370px' height='280px' >
+          <img :src="image_src" alt='' width='280px' height='280px' style='margin-left:20px;' >
         </div>
       </div>
     </div>

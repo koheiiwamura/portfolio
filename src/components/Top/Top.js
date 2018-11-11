@@ -21,6 +21,7 @@ export default {
     data: function () {
       return {
         scrollWidth: slideSetWidth,
+        image_src: require("../../assets/images/sample.jpeg")
       }
     },
     methods: {
