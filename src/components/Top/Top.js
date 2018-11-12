@@ -21,7 +21,10 @@ export default {
     data: function () {
       return {
         scrollWidth: slideSetWidth,
-        image_src: require("../../assets/images/sample.jpeg")
+        image_src: require("../../assets/images/sample.jpeg"),
+        face_image_src: require("../../assets/images/face.jpg"),
+        go_outside_image_src: require("../../assets/images/go_outside.jpg"),
+        favorite_food_image_src: require("../../assets/images/favorite_food.jpg"),
       }
     },
     methods: {
