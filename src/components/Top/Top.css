@@ -133,6 +133,9 @@ a {
   .contact-top .row-right {
     width: 68%; }
 
+.contact-bottom {
+  display: flex; }
+
 .fa-envelope {
   color: rgba(0, 0, 0, 0.26); }
 
@@ -141,5 +144,31 @@ a {
 
 .fa-facebook-messenger {
   color: #0084ff; }
+
+.overlay-title {
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: -50%;
+  z-index: 100;
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  font-family: Karla, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.7px; }
+
+.image img {
+  transition: all 0.5s ease-in-out; }
+  .image img:hover {
+    -webkit-filter: brightness(20%);
+    filter: brightness(20%);
+    opacity: 0.9; }
+
+.image:hover .overlay-title {
+  opacity: 1; }
 
 /*# sourceMappingURL=Top.css.map */

@@ -29,11 +29,11 @@ export default {
     },
     methods: {
       changeContent: function (requreContent) {
-      var slideCurrent = pageNumDict[requreContent];
-      $(this.$refs.slideSet).animate({
-        left: slideCurrent * -slideWidth
-      });
-      }
+        var slideCurrent = pageNumDict[requreContent];
+        $(this.$refs.slideSet).animate({
+          left: slideCurrent * -slideWidth
+        });
+      },
     }
 
 }
