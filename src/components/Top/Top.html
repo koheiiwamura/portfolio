@@ -40,14 +40,20 @@
 
             <div class='work-item'>
               <div class='work-item-header'>
-                <img :src="image_src" alt='' height='200px' width='100%' >
+                <div class="image">
+                  <a><img :src="image_src" alt='' height='200px' width='100%'></a>
+                  <h3 class="overlay-title"> comming soon </h3>
+                </div>
               </div>
               <div class='work-item-bottom'>Internship</div>
               <div class='work-period'>2016-11 ~ 2017-3</div>
             </div>
             <div class='work-item'>
               <div class='work-item-header'>
-                <img :src="image_src" alt='' height='200px' width='100%' >
+                <div class="image">
+                  <a><img :src="image_src" alt='' height='200px' width='100%' ></a>
+                  <h3 class="overlay-title"> comming soon </h3>
+                </div>
               </div>
               <div class='work-item-bottom'>Software Enginner</div>
               <div class='work-period'>2017-4 ~</div>
@@ -110,15 +116,11 @@
         </div>
         <div class='contact-bottom'>
           <div class="image">
-            <a>
-              <img :src="go_outside_image_src" alt='' width='370px' height='280px' >
-            </a>
+            <img :src="go_outside_image_src" alt='' width='370px' height='280px' >
             <h3 class="overlay-title">Go outside</h3>
           </div>
           <div class="image">
-            <a>
-              <img :src="favorite_food_image_src" alt='' width='280px' height='280px' style='margin-left:20px; ' >
-            </a>
+            <img :src="favorite_food_image_src" alt='' width='280px' height='280px' style='margin-left:20px; ' >
             <h3 class="overlay-title">Favorite food</h3>
           </div>
         </div>
